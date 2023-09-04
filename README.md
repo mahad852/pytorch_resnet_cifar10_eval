@@ -42,28 +42,23 @@ Our implementation follows the paper in straightforward manner with some caveats
 1) First make sure you have conda installed.
 2) Create conda environment using:
 ```
-```
 conda create --name resnet_cifar
 ```
-```
+
 3) Active conda environmnet using:
-```
 ```
 conda actvate resnet_cifar
 ```
-```
+
 
 4) Install requirements using (make sure you are in the root directory):
 ```
-```
 conda install --file requirements.txt
 ```
-```
+
 5) Run eval_all.py using:
 ```
-```
 python eval_all.py
-```
 ```
 
 If you find this implementation useful and want to cite/mention this page, here is a bibtex citation:
