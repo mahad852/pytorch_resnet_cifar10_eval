@@ -1,3 +1,6 @@
+## Changes made over the original repo:
+Original didn't have code to test pretrained model despite having having a pre-trained option. This fork has a new added file called "eval_all.py" that evaluates all resnet models (as per the paper) over CIFAR10.
+
 # Proper ResNet Implementation for CIFAR10/CIFAR100 in Pytorch
 [Torchvision model zoo](https://github.com/pytorch/vision/tree/master/torchvision/models) provides number of implementations of various state-of-the-art architectures, however, most of them are defined and implemented for ImageNet.
 Usually it is straightforward to use the provided models on other datasets, but some cases require manual setup.
@@ -18,9 +21,9 @@ This implementation matches description of the original paper, with comparable o
 
 ## How to run?
 ```bash
-git clone https://github.com/akamaster/pytorch_resnet_cifar10
-cd pytorch_resnet_cifar10
-chmod +x run.sh && ./run.sh
+git clone https://github.com/mahad852/pytorch_resnet_cifar10_eval
+cd pytorch_resnet_cifar10_eval
+chmod +x run.sh
 ```
 
 ## Details of training
@@ -33,6 +36,35 @@ Our implementation follows the paper in straightforward manner with some caveats
 4. [ResNet56, 6.61% err](https://github.com/akamaster/pytorch_resnet_cifar10/raw/master/pretrained_models/resnet56.th)
 5. [ResNet110, 6.32% err](https://github.com/akamaster/pytorch_resnet_cifar10/raw/master/pretrained_models/resnet110.th)
 6. [ResNet1202, 6.18% err](https://github.com/akamaster/pytorch_resnet_cifar10/raw/master/pretrained_models/resnet1202.th)
+
+
+## Running evaluation (using pretrained models) over all resnet models:
+1) First make sure you have conda installed.
+2) Create conda environment using:
+```
+```
+conda create --name resnet_cifar
+```
+```
+3) Active conda environmnet using:
+```
+```
+conda actvate resnet_cifar
+```
+```
+
+4) Install requirements using (make sure you are in the root directory):
+```
+```
+conda install --file requirements.txt
+```
+```
+5) Run eval_all.py using:
+```
+```
+python eval_all.py
+```
+```
 
 If you find this implementation useful and want to cite/mention this page, here is a bibtex citation:
 
