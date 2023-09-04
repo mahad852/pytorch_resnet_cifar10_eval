@@ -50,13 +50,17 @@ conda create --name resnet_cifar
 conda actvate resnet_cifar
 ```
 
+4) Make sure global system modules/libraries aren't being used and only current conda environment libraries are used by typing the following in the terminal:
+```
+export PYTHONNOUSERSITE=1
+```
 
-4) Install requirements using (make sure you are in the root directory):
+5) Install requirements using (make sure you are in the root directory):
 ```
 conda install --file requirements.txt
 ```
 
-5) Run eval_all.py using:
+6) Run eval_all.py using:
 ```
 python eval_all.py
 ```
