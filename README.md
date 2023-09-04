@@ -39,7 +39,7 @@ Our implementation follows the paper in straightforward manner with some caveats
 
 
 ## Running evaluation (using pretrained models) over all resnet models:
-1) First make sure you have conda installed.
+1) First make sure you have conda installed. If not, follow [this guide](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) to install conda on your machine.
 2) Create conda environment using:
 ```
 conda create --name resnet_cifar
