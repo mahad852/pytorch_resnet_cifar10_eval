@@ -47,7 +47,7 @@ conda create --name resnet_cifar
 
 3) Active conda environmnet using:
 ```
-conda actvate resnet_cifar
+conda activate resnet_cifar
 ```
 
 4) Make sure global system modules/libraries aren't being used and only current conda environment libraries are used by typing the following in the terminal:
